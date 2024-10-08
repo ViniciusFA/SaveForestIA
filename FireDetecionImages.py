@@ -1,8 +1,12 @@
 import cv2
 import numpy as np
+import os
 
 #Load the Amazon image
-pathOriginalImage = "C:\\Users\\vinny\\Desktop\\Project_SaveAmazon\\images\\amazon01.jpeg";
+
+# Caminho relativo para uma pasta acima da pasta raiz
+pathOriginalImage = os.path.join("..", "images", "amazon01.jpeg")
+#pathOriginalImage = \images\\amazon01.jpeg";
 image = cv2.imread(pathOriginalImage)
 
 # Check if the image was loaded successfully

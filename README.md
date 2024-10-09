@@ -1,2 +1,2 @@
 # FireDetectionImagesIA
-Project for fire detection in images of the environment using artificial intelligence.
+Fire detection project through analysis of environmental images, animal detection, movement detection and object recognition using artificial intelligence.

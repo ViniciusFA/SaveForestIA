@@ -1,8 +1,11 @@
 import tkinter as tk
+from AnalyseImage import AnalyseImage_MainScreen
 from AnalyseImage import AnalyseImageImages
+
 
 # Image Analysis function
 def image_analysis():
+    AnalyseImage_MainScreen.main();
     AnalyseImageImages.check_Image()
     
 # Object Detection function    
@@ -17,13 +20,21 @@ def object_recognition():
 def object_recognition():
     print('Motion Detection');
 
+# Exit program
+def exit_application():
+    root.destroy()  # Close the application
+
 # Creating the main window
 root = tk.Tk()
 root.title("IA System")
-root.geometry("600x600")
+root.geometry("700x700")
+
+# Create a frame for the footer
+footer_frame = tk.Frame(root)
+footer_frame.pack(side=tk.BOTTOM, fill=tk.X)  # Pack the frame at the bottom
 
 # Including a label
-label = tk.Label(root, text="Seleciona uma das opções abaixo:")
+label = tk.Label(root, text="Select one of the options below")
 label.pack(pady=10)
 
 # Including the Image Analysis button
@@ -41,6 +52,10 @@ button.pack(pady=10)
 # Including the Motion Detection button
 button = tk.Button(root, text="Motion Detection", command=object_recognition)
 button.pack(pady=10)
+
+# Create an exit button
+exit_button = tk.Button(footer_frame, text="Exit", command=exit_application)
+exit_button.pack(pady=20)  # Add some padding
 
 # Run the system
 root.mainloop()

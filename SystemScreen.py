@@ -5,7 +5,7 @@ from AnalyseImage import AnalyseImageImages
 
 # Image Analysis function
 def image_analysis():
-    AnalyseImage_MainScreen.main();
+    AnalyseImage_MainScreen.main()
     AnalyseImageImages.check_Image()
     
 # Object Detection function    

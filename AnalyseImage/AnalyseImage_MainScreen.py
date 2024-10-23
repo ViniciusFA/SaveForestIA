@@ -1,5 +1,7 @@
 import tkinter as tk
+from .FacialRecognition import DetectionFaces  # Importação relativa
 
+#from .Data
 
 # Object Recognition function 
 def objectDetection_recognition():
@@ -11,11 +13,11 @@ def image_classification():
 
 # Image Segmentation function
 def image_segmentation():
-    print('Image Segmentation');
+    DetectionFaces.main();
 
 # Facial Recognition (OCR) function
 def face_recognition():
-    print('Facial Recognition (OCR)');
+    DetectionFaces.main()
 
 # Color Analysis
 def color_analysis():
@@ -47,8 +49,8 @@ def image_captioning():
 
 # Action or Gesture Recognition
 def action_gesture_recognition():
-    print('Action or Gesture Recognition');
-    
+    print('Action or Gesture Recognition'); 
+
 def main():
     # Creating the main window
     root = tk.Tk()
@@ -128,4 +130,5 @@ def main():
     exit_button.pack(pady=20)  # Add some padding
 
     # Run the system
-    root.mainloop()
+    root.mainloop
+

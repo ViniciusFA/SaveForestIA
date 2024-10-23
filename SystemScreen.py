@@ -5,8 +5,9 @@ from AnalyseImage import AnalyseImageImages
 
 # Image Analysis function
 def image_analysis():
-    AnalyseImage_MainScreen.main();
-    AnalyseImageImages.check_Image()
+    AnalyseImage_MainScreen.main()
+    #AnalyseImageImages.check_Image()
+    root.destroy()
     
 # Object Detection function    
 def object_detection():
@@ -22,7 +23,7 @@ def object_recognition():
 
 # Exit program
 def exit_application():
-    root.destroy()  # Close the application
+    root.destroy()  # Close the Application
 
 # Creating the main window
 root = tk.Tk()

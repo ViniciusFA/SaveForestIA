@@ -4,6 +4,10 @@ from AnalyseImage import AnalyseImage_Functions
 
 #Check Image
 def check_Image():
+    # Relative path to a folder above the root folder
+    pathOriginalImage = os.path.join("..", "images", "amazon01.jpeg")
+    image = AnalyseImage_Functions.imread(pathOriginalImage)
+
     # Check if the image was loaded successfully
     if image is not None:
         
@@ -41,9 +45,7 @@ def check_Image():
     else:
         print("Error to load image.")
         
-# Relative path to a folder above the root folder
-pathOriginalImage = os.path.join("..", "images", "amazon01.jpeg")
-image = AnalyseImage_Functions.imread(pathOriginalImage)
+
 
 
     

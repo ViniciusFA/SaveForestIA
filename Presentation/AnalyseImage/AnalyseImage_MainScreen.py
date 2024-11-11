@@ -1,5 +1,7 @@
 import tkinter as tk
 from .FacialRecognition import DetectionFaces  # Importação relativa
+from .ImageSegmentation.Instance import Instance_Main  # Importação relativa
+from .ImageSegmentation.Semantic import Semantic_Main   # Importação relativa
 
 #from .Data
 
@@ -13,7 +15,7 @@ def image_classification():
 
 # Image Segmentation function
 def image_segmentation():
-    DetectionFaces.main();
+    print('Image Segmentation');
 
 # Facial Recognition (OCR) function
 def face_recognition():

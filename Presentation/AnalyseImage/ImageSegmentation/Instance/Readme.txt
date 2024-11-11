@@ -1,0 +1,1 @@
+Similar to semantic segmentation, but it distinguishes individual instances of objects (e.g., different trees in an image).

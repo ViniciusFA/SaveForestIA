@@ -1,6 +1,6 @@
 import tkinter as tk
-from AnalyseImage import AnalyseImage_MainScreen
-from AnalyseImage import AnalyseImageImages
+from Presentation.AnalyseImage import AnalyseImage_MainScreen
+from Presentation.AnalyseImage import AnalyseImageImages
 
 
 # Image Analysis function

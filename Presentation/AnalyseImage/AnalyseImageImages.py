@@ -1,6 +1,6 @@
 import cv2
 import os
-from AnalyseImage import AnalyseImage_Functions
+from Presentation.AnalyseImage import AnalyseImage_Functions
 
 #Check Image
 def check_Image():

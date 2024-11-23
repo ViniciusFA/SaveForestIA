@@ -1,7 +1,7 @@
 import tkinter as tk
 from Presentation.AnalyseImage import AnalyseImage_MainScreen
 from Presentation.AnalyseImage import AnalyseImageImages
-
+from Presentation.Algorithms import Algorithms_MainScreen
 
 # Image Analysis function
 def image_analysis():
@@ -21,6 +21,10 @@ def object_recognition():
 def object_recognition():
     print('Motion Detection');
 
+# Algorithms
+def algorithms():
+    print('Algorithms');
+
 # Exit program
 def exit_application():
     root.destroy()  # Close the Application
@@ -37,6 +41,10 @@ footer_frame.pack(side=tk.BOTTOM, fill=tk.X)  # Pack the frame at the bottom
 # Including a label
 label = tk.Label(root, text="Select one of the options below")
 label.pack(pady=10)
+
+# Including the Algorithms button
+button = tk.Button(root, text="Algorithms", command=algorithms)
+button.pack(pady=10)
 
 # Including the Image Analysis button
 button = tk.Button(root, text="Image Analysis", command=image_analysis)

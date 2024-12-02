@@ -2,6 +2,7 @@ import tkinter as tk
 from Presentation.AnalyseImage import AnalyseImage_MainScreen
 from Presentation.AnalyseImage import AnalyseImageImages
 from Presentation.Algorithms import Algorithms_MainScreen
+from Infrastructure.Logging import Logging
 
 # Image Analysis function
 def image_analysis():
@@ -11,18 +12,22 @@ def image_analysis():
     
 # Object Detection function    
 def object_detection():
+    Logging.info("Object Detection method was invoked")
     print('Object Detection')
 
 # Object Recognition function 
 def object_recognition():
+    Logging.info("Object Recognition method was invoked")
     print('Object Recognition');
 
 # Motion Detection function 
 def object_recognition():
+    Logging.info("Motion Detection method was invoked")
     print('Motion Detection');
 
 # Algorithms
 def algorithms():
+    Logging.info("Algorithms method was invoked")
     print('Algorithms');
 
 # Exit program
@@ -66,5 +71,6 @@ button.pack(pady=10)
 exit_button = tk.Button(footer_frame, text="Exit", command=exit_application)
 exit_button.pack(pady=20)  # Add some padding
 
+Logging.info("The program is starting...")
 # Run the system
 root.mainloop()
